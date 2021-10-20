@@ -2,7 +2,7 @@
 
 namespace App\Database\Seeds;
 
-use App\Models\PenggunaModel;
+use App\Models\PenggunaModel_12200801;
 use CodeIgniter\Database\Seeder;
 
 class PenggunaSeeder extends Seeder
@@ -23,7 +23,8 @@ class PenggunaSeeder extends Seeder
                 'password'   => md5('ZAKI_FADIRAH')
             ]
         ];
-        $p = new Pengguna();
+        $p = new PenggunaModel_12200801();
         $p->insertBatch($data);
+        
     }
 }
